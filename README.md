@@ -22,7 +22,7 @@ npm run start
 ```
 
 ## Playing the game
-Space shooters needs two players per game. The first player should create a new game, and the second player should use their friend's room code to join the same game.
+Space Game needs two players per game. The first player should create a new game, and the second player should use their friend's room code to join the same game.
 
 The aim is to collect the gems before the other player. When a gem is collected, another one will appear.
 
