@@ -1,4 +1,4 @@
-# Space Shooters Game
+# Space Game
 A small Phaser 3 game written in TypeScript for a Computer Science MSc project.
 
 Asset credits:

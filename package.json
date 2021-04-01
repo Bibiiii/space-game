@@ -1,5 +1,5 @@
 {
-  "name": "space-shooters",
+  "name": "space-game",
   "version": "1.0.0",
   "description": "A little Phaser game written in Typescript",
   "main": "index.ts",
