@@ -12,13 +12,15 @@ Asset credits:
 ## Running the game
 To run the game locally in dev mode, run:
 ```
+npm install
 npm run start-dev
 ```
 
 To build the game and then run it, use:
 ```
+npm install
 npm run build-client
-npm run start
+npm run start-server
 ```
 
 ## Playing the game
