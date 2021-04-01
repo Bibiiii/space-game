@@ -54,7 +54,6 @@ const startListening = () => {
   server.clientUpdateRate = 1000 / 5; // Rate at which update packets are sent
   const io = socketio(server);
   require("./socket")(io);
-  console.log("HERE");
 };
 
 async function bootApp() {

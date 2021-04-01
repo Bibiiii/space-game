@@ -4,23 +4,6 @@ const config = require("../config/config");
 const appConfig = require("../config/config");
 
 const gameRooms = {};
-const server = {};
-
-// game state
-// const game = {
-//   players: {},
-//   gem: {
-//     x: Math.floor(Math.random() * 700) + 50,
-//     y: Math.floor(Math.random() * 500) + 50,
-//   },
-//   scores: {
-//     blue: 0,
-//     red: 0,
-//   },
-//   pkg: {
-//     stamp: undefined,
-//   },
-// };
 
 module.exports = (io) => {
   io.on("connection", (socket) => {
@@ -47,7 +30,6 @@ module.exports = (io) => {
 
         const avgAcceleration =
           (Math.abs(data.acceleration.x) + Math.abs(data.acceleration.y)) / 2;
-        console.log(avgAcceleration);
 
         if (avgAcceleration > 80) {
           game.players[socket.id].isCheating = true;
@@ -160,7 +142,6 @@ module.exports = (io) => {
         gameRooms[roomKey].numPlayers = Object.keys(
           gameRooms[roomKey].players
         ).length;
-        // roomInfo.numPlayers = Object.keys(roomInfo.players).length;
         // emit a message to all players to remove this player
         socket.to(roomKey).emit("disconnected", socket.id);
       } else {
