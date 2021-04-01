@@ -1,5 +1,13 @@
 # Space Shooters Game
-A small Phaser 3 game written in TypeScript for a Computer Science MSc project. 
+A small Phaser 3 game written in TypeScript for a Computer Science MSc project.
+
+Asset credits:
+* Font: "Space Madness" by Robert Frye aka Mozz https://mozz.itch.io/space-madness
+* Background: "Starry Space" parallaxing background by Enjl https://enjl.itch.io/background-starry-space
+* Background: game background from "Superpowers Space Shooter Asset Pack (part 1)" by Pixel-boy https://www.patreon.com/SparklinLabs?ty=h
+* Music: "Loading" from  "Space Music Pack" by GooseNinja https://gooseninja.itch.io/space-music-pack
+* Spaceship sprites and gems by Pixel-boy
+* GUI and buttons made by me
 
 ## Running the game
 To run the game locally in dev mode, run:
@@ -44,3 +52,7 @@ Players on the red team can move quicker than players on the blue team.
 
 ### 7. Cheating detection
 Whenever the server receives movement from a player, it checks the acceleration of the player. If the average acceleration is above the specified value, a warning is sent to the cheating player.
+
+## Screenshots
+![Main Screen](dist/assets/demo/main_screen.png?raw=true "Main Screen")
+![Gameplay](dist/assets/demo/gameplay.png?raw=true "Gameplay")
